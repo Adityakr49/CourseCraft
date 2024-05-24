@@ -71,11 +71,11 @@ export const ChapterVideoForm = ({
           </div>
         ) : (
           <div className="relative aspect-video mt-2">
-            {/* <MuxPlayer playbackId={initialData?.muxData?.playbackId || ""} /> */}
+            <MuxPlayer playbackId={initialData?.muxData?.playbackId || ""} />
             {/* <video width="750" height="500" controls controlsList="nodownload"> */}
-            <video width="100%" height="100%" controls controlsList="nodownload">
-              <source src={initialData.videoUrl} type="video/mp4" />
-            </video>
+            {/* <video width="100%" height="100%" controls controlsList="nodownload"> */}
+              {/* <source src={initialData.videoUrl} type="video/mp4" /> */}
+            {/* </video> */}
           </div>
         ))}
       {isEditing && (
